@@ -5,8 +5,8 @@ toc: false
 width: full
 ---
 
-<!-- ![me](me.jpeg){.align-right} -->
-![me](twitter.com/MatiasGleser/photo)
+![me](/images/me.jpeg){.align-right}
+![me](https://twitter.com/MatiasGleser/photo)
 
 Economist from Córdoba, Argentina.
 
