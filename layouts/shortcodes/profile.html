@@ -5,44 +5,45 @@
     </div>
 </div>
 <style>
+  .profile-section {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align content to the start */
+    flex-wrap: wrap;
+    text-align: center; /* Center text for larger screens */
+  }
+
+  .profile-picture {
+    width: 80%; /* Adjust width as needed */
+    max-width: 375px; /* Ensures image does not exceed 375px */
+    min-width: 150px; /* Minimum width for the image */
+    margin: 2%; /* Adds some margin around the image */
+  }
+
+  .profile-text {
+    flex: 1; /* Allows text to take up remaining space */
+    text-align: left; /* Align text to the left for smaller screens */
+    margin-left: 20px; /* Adds margin to the left of the text */
+    margin-top: 2%;
+    display: flex;
+    align-items: flex-start; /* Align text to the top */
+  }
+
+  @media (max-width: 768px) {
     .profile-section {
-        display: flex;
-        align-items: flex-start; /* Align items to the top */
-        justify-content: flex-start; /* Align content to the start */
-        flex-wrap: wrap;
-        text-align: center; /* Center text for larger screens */
+      text-align: left; /* Align text to the left for smaller screens */
+      flex-direction: column; /* Stack elements vertically */
     }
 
     .profile-picture {
-        width: 80%; /* Adjust width as needed */
-        max-width: 375px; /* Ensures image does not exceed 375px */
-        min-width: 150px; /* Minimum width for the image */
-        margin: 2%; /* Adds some margin around the image */
+      width: 100%; /* Image takes full width on smaller screens */
+      max-width: 100%; /* Ensures image does not exceed container width */
+      margin-left: 0; /* Remove left margin on smaller screens */
     }
 
     .profile-text {
-        flex: 1; /* Allows text to take up remaining space */
-        text-align: left; /* Align text to the left for smaller screens */
-        margin-left: 20px; /* Adds margin to the left of the text */
-        margin-top: 2%;
-        display: flex;
-        align-items: flex-start; /* Align text to the top */
+      width: 100%; /* Text takes full width on smaller screens */
+      margin-left: 0; /* Remove left margin on smaller screens */
     }
-
-    @media (max-width: 768px) {
-        .profile-section {
-            text-align: left; /* Align text to the left for smaller screens */
-            flex-direction: column; /* Stack elements vertically */
-        }
-
-        .profile-picture {
-            width: 100%; /* Image takes full width on smaller screens */
-            max-width: 100%; /* Ensures image does not exceed container width */
-        }
-
-        .profile-text {
-            width: 100%; /* Text takes full width on smaller screens */
-            margin-left: 0; /* Remove left margin on smaller screens */
-        }
-    }
+  }
 </style>
