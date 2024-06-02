@@ -1,7 +1,7 @@
 ---
 title: Demo Page
 type: docs
-prev: /
+# prev: /
 next: docs/folder/
 ---
 
