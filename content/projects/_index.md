@@ -16,7 +16,7 @@ cascade:
  {{< project-card
     title="BymaData Api Wrapper"
     subtitle="Unofficial python wrapper for the BymaData API."
-    link="/projects/bymadata-api-wrapper"
+    link="projects/bymadata-api-wrapper"
     icon="code"
   >}}
 {{< /project-grid >}}
