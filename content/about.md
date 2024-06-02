@@ -13,5 +13,8 @@ This is the about page.
 
 {{< typing >}}
 
+{{< relative-url >}}
+
+
 {{< /profile >}}
 
