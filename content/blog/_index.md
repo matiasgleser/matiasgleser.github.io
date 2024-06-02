@@ -7,4 +7,3 @@ toc: true
 
 Site reserved for future blog posts.
 
-{{< typing >}}

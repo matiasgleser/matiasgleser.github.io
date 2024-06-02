@@ -11,7 +11,6 @@ Economist from Córdoba, Argentina.
 
 This is the about page.
 
-{{< relative-url >}}
 
 {{< /profile >}}
 
