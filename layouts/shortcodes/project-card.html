@@ -7,8 +7,10 @@
 {{- $icon := .Get "icon" -}}
 {{- $link := .Get "link" -}}
 
+{{- $href := cond (strings.HasPrefix $link "/") ($link | relURL) $link -}}
 
-<a href="{{ $link }}"
+
+<a href="{{ $href }}"
   {{ with $style }}style="{{ . | safeCSS }}"{{ end }}
   class="{{ $class }} no-underline hextra-feature-card relative overflow-hidden rounded-3xl border border-gray-200 hover:border-gray-300 dark:border-neutral-800 dark:hover:border-neutral-700 before:pointer-events-none before:absolute before:inset-0 before:bg-glass-gradient"
 >
