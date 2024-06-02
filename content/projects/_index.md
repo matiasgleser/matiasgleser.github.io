@@ -6,10 +6,8 @@ sidebar:
     hide: true
 
 cascade:
-    # type: project 
     toc: true
 ---
-
 
 
 {{< project-grid >}}
