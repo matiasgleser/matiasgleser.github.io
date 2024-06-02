@@ -18,26 +18,32 @@ markup:
 
 menu:
   main:
-    - name: Posts
-      pageRef: /posts
+    # - name: Blog
+    #   pageRef: /blog
+    #   weight: 1
+    - name: Projects
+      pageRef: /projects
       weight: 1
+    - name: Archive
+      pageref: /archive
+      weight: 2
     - name: About Me
       pageRef: /about
-      weight: 2
+      weight: 3
     - name: Contact ↗
       url: "https://github.com/matiasgleser"
-      weight: 3
-    - name: Search
       weight: 4
+    - name: Search
+      weight: 5
       params:
         type: search
     - name: GitHub
-      weight: 5
+      weight: 6
       url: "https://github.com/matiasgleser"
       params:
         icon: github
     - name: Twitter
-      weight: 6
+      weight: 7
       url: "https://twitter.com/MatiasGleser"
       params:
         icon: x-twitter

@@ -1,0 +1,58 @@
+{{ $folder := .Get "folder" }}
+{{ $lang := .Page.Lang }}
+<div class="archive-list">
+  {{ $posts := slice }}
+  {{ range (readDir $folder) }}
+    {{ if .IsDir }}
+      {{ $indexFile := printf "%s/%s/_index.md" $folder .Name }}
+      {{ if ne $lang "en" }}
+        {{ $indexFile = printf "%s/%s/_index.%s.md" $folder .Name $lang }}
+      {{ end }}
+      {{ if (fileExists $indexFile) }}
+        {{ $page := readFile $indexFile | transform.Unmarshal }}
+        {{ $title := $page.title | default "No title available" }}
+        {{ $description := $page.description | default "No description available" }}
+        {{ $date := $page.date | default "" }}
+        {{ $url := printf "/%s/%s" (strings.TrimPrefix "content/" $folder) .Name }}
+        {{ $posts = $posts | append (dict "title" $title "description" $description "date" $date "url" $url) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ range sort $posts "date" "desc" }}
+    <div class="post-item">
+      <h2><a href="{{ .url }}">{{ .title }}</a></h2>
+      <p>{{ .description }}</p>
+      {{ if .date }}
+        <p class="date">{{ .date.Format "2006-01-02" }}</p>
+      {{ else }}
+        <p class="date">No date available</p>
+      {{ end }}
+    </div>
+    <hr/>
+  {{ end }}
+</div>
+<style>
+  .archive-list {
+    padding: 20px;
+  }
+  .post-item {
+    margin-bottom: 20px;
+  }
+  .post-item h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+  }
+  .post-item p {
+    margin: 5px 0;
+  }
+  .post-item .date {
+    color: #666;
+    font-size: 0.9em;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+  }
+</style>

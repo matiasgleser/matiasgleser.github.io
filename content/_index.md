@@ -8,8 +8,8 @@ This is the landing page for website.
 ## Explore
 
 {{< cards >}}
-  {{< card link="posts" title="Posts" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
+  {{< card link="projects" title="Projects" icon="book-open" >}}
+  {{< card link="about" title="About Me" icon="user" >}}
 {{< /cards >}}
 
 ## Documentation
