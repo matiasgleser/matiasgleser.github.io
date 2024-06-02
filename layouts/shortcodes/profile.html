@@ -1,5 +1,5 @@
 <div class="profile-section">
-    <img src="{{ .Get "src" }}" alt="Profile Picture" class="profile-picture"/>
+    <img src="{{ .Get "src" | relURL }}" alt="Profile Picture" class="profile-picture"/>
     <div class="profile-text">
         {{ .Inner }}
     </div>
@@ -23,8 +23,8 @@
     .profile-text {
         flex: 1; /* Allows text to take up remaining space */
         text-align: left; /* Align text to the left for smaller screens */
-        margin-top: 2%;
         margin-left: 20px; /* Adds margin to the left of the text */
+        margin-top: 2%;
         display: flex;
         align-items: flex-start; /* Align text to the top */
     }
