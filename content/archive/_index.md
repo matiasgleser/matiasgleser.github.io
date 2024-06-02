@@ -10,7 +10,7 @@ A comprehensive list of all posts made under the projects or blog categories.
 
 ### Projects
 
-{{< archive folder="/projects" >}}
+{{< archive folder="projects" >}}
 
 <!-- ### Blog -->
 

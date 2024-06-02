@@ -2,7 +2,7 @@
 {{ $searchFolder := printf "content/%s" (.Get "folder") }}
 {{ $lang := .Page.Lang }}
 {{ $defaultLang := site.Language.Lang }}
-
+{{ $baseURL := .Site.BaseURL }}
 
 <div class="archive-list">
   {{ $posts := slice }}
@@ -17,7 +17,7 @@
         {{ $title := $page.title | default "No title available" }}
         {{ $description := $page.description | default "No description available" }}
         {{ $date := $page.date | default "" }}
-        {{ $href := printf "%s/%s/" ($folder) .Name }}
+        {{ $href := printf "%s%s/%s/" ($baseURL) ($folder) .Name }}
         {{ $posts = $posts | append (dict "title" $title "description" $description "date" $date "href" $href) }}
       {{ end }}
     {{ end }}
