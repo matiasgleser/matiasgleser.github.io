@@ -1,11 +1,12 @@
 {{ $folder := .Get "folder" }}
 {{ $lang := .Page.Lang }}
+{{ $defaultLang := site.Language.Lang }}
 <div class="archive-list">
   {{ $posts := slice }}
   {{ range (readDir $folder) }}
     {{ if .IsDir }}
       {{ $indexFile := printf "%s/%s/_index.md" $folder .Name }}
-      {{ if ne $lang "en" }}
+      {{ if ne $lang $defaultLang }}
         {{ $indexFile = printf "%s/%s/_index.%s.md" $folder .Name $lang }}
       {{ end }}
       {{ if (fileExists $indexFile) }}
@@ -13,7 +14,8 @@
         {{ $title := $page.title | default "No title available" }}
         {{ $description := $page.description | default "No description available" }}
         {{ $date := $page.date | default "" }}
-        {{ $url := printf "/%s/%s" (strings.TrimPrefix "content/" $folder) .Name }}
+        <!-- {{ $url := printf "/%s/%s" (strings.TrimPrefix "content/" $folder) .Name }} -->
+        {{ $url := $page.RelPermalink }}
         {{ $posts = $posts | append (dict "title" $title "description" $description "date" $date "url" $url) }}
       {{ end }}
     {{ end }}
