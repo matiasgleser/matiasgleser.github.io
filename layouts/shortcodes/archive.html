@@ -1,9 +1,12 @@
 {{ $folder := .Get "folder" }}
+{{ $searchFolder := printf "content/%s" (.Get "folder") }}
 {{ $lang := .Page.Lang }}
 {{ $defaultLang := site.Language.Lang }}
+
+
 <div class="archive-list">
   {{ $posts := slice }}
-  {{ range (readDir $folder) }}
+  {{ range (readDir $searchFolder) }}
     {{ if .IsDir }}
       {{ $indexFile := printf "%s/%s/_index.md" $folder .Name }}
       {{ if ne $lang $defaultLang }}
@@ -14,16 +17,15 @@
         {{ $title := $page.title | default "No title available" }}
         {{ $description := $page.description | default "No description available" }}
         {{ $date := $page.date | default "" }}
-        <!-- {{ $url := printf "/%s/%s" (strings.TrimPrefix "content/" $folder) .Name }} -->
-        {{ $url := $page.RelPermalink }}
-        {{ $posts = $posts | append (dict "title" $title "description" $description "date" $date "url" $url) }}
+        {{ $href := printf "%s/%s/" ($folder) .Name }}
+        {{ $posts = $posts | append (dict "title" $title "description" $description "date" $date "href" $href) }}
       {{ end }}
     {{ end }}
   {{ end }}
 
   {{ range sort $posts "date" "desc" }}
     <div class="post-item">
-      <h2><a href="{{ .url }}">{{ .title }}</a></h2>
+      <h2><a href="{{ .href }}">{{ .title }}</a></h2>
       <p>{{ .description }}</p>
       {{ if .date }}
         <p class="date">{{ .date.Format "2006-01-02" }}</p>

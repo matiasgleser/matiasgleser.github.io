@@ -8,8 +8,7 @@
 {{- $link := .Get "link" -}}
 
 
-
-{{- $href := cond (strings.HasPrefix $link "/") ($link | relURL) $link -}}
+{{- $href := cond (strings.HasPrefix $link "/") ($link | relURL) ($link | absURL) -}}
 
 
 <a href="{{ $href }}"
