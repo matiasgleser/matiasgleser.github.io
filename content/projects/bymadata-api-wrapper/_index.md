@@ -1,7 +1,6 @@
 ---
 title: BymaData API Wrapper
-# date: 2024-01-01
-# date: 2024-01-01T00:00:00Z
+date: 2024-01-01
 draft: true
 toc: true
 

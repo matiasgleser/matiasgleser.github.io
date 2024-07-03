@@ -17,8 +17,9 @@
         {{ $title := $page.title | default "No title available" }}
         {{ $description := $page.description | default "No description available" }}
         {{ $date := $page.date | default "" }}
+        {{ $parsedDate := $date | time }}
         {{ $href := printf "%s%s/%s/" ($baseURL) ($folder) .Name }}
-        {{ $posts = $posts | append (dict "title" $title "description" $description "date" $date "href" $href) }}
+        {{ $posts = $posts | append (dict "title" $title "description" $description "date" $parsedDate "href" $href) }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -28,6 +29,7 @@
       <h2><a href="{{ .href }}">{{ .title }}</a></h2>
       <p>{{ .description }}</p>
       {{ if .date }}
+        <!-- <p class="date">{{ .date }}</p> -->
         <p class="date">{{ .date.Format "2006-01-02" }}</p>
       {{ else }}
         <p class="date">No date available</p>
