@@ -25,12 +25,12 @@ menu:
       pageRef: /projects
       weight: 1
     - name: Archive
-      pageref: /archive
+      pageRef: /archive
       weight: 2
     - name: About Me
       pageRef: /about
       weight: 3
-    - name: Contact ↗
+    - name: Contact # ↗
       url: "https://github.com/matiasgleser"
       weight: 4
     - name: Search
