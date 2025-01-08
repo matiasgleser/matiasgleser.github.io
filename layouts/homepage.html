@@ -1,35 +1,37 @@
 {{ define "main" }}
 
-    <div class='hx-mx-auto hx-flex'>
+  <div class='hx-mx-auto hx-flex'>
     {{ partial "sidebar.html" (dict "context" . "disableSidebar" true) }}
+  
     <div class="hx-w-full hx-break-words hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-pb-8 hx-pt-8 md:hx-pt-12 hx-pl-[max(env(safe-area-inset-left),5.5rem)] hx-pr-[max(env(safe-area-inset-left),1.5rem)]">
 
-        <!-- Profile Section Container -->
-        <div class="profile-section">
+      <!-- Profile Section Container -->
+      <div class="profile-section">
         <!-- Profile Picture -->
         <div class="hx-w-full">
-            <img src="{{ .Params.profilePicture }}" alt="Profile Picture" class="profile-picture" />
+          <img src="{{ .Params.profilePicture }}" alt="Profile Picture" class="profile-picture" />
         </div>
 
         <!-- Profile Content -->
         {{ $splitContent := split .Content "<!--split-->" }}
         <div class="hx-w-full md:hx-w-2/3 profile-text prose">
-            {{ with index $splitContent 0 | markdownify }}
-            {{ . }}
-            {{ end }}
+          {{ with index $splitContent 0 | markdownify }}
+          {{ . }}
+          {{ end }}
         </div>
-        </div>
+      </div>
 
-        <!-- Full-Width Section Below -->
-        <div class="under-profile">
+      <!-- Full-Width Section Below -->
+      <div class="under-profile">
         {{ with index $splitContent 1 | markdownify }}
-            {{ . }}
+        {{ . }}
         {{ end }}
-        </div>
+      </div>
     </div>
-    </div>
+  </div>
 
   <style>
+
     .profile-section {
       display: flex;
       align-items: flex-start;
