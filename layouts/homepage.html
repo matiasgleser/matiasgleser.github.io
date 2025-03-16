@@ -3,108 +3,20 @@
   <div class='hx-mx-auto hx-flex'>
     {{ partial "sidebar.html" (dict "context" . "disableSidebar" true) }}
   
-    <div class="hx-w-full hx-break-words hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-pb-8 hx-pt-8 md:hx-pt-12 hx-pl-[max(env(safe-area-inset-left),5.5rem)] hx-pr-[max(env(safe-area-inset-left),1.5rem)]">
-
-      <!-- Profile Section Container -->
-      <div class="profile-section">
-        <!-- Profile Picture -->
-        <div class="hx-w-full">
-          <img src="{{ .Params.profilePicture }}" alt="Profile Picture" class="profile-picture" />
-        </div>
-
-        <!-- Profile Content -->
-        {{ $splitContent := split .Content "<!--split-->" }}
-        <div class="hx-w-full md:hx-w-2/3 profile-text prose">
-          {{ with index $splitContent 0 | markdownify }}
-          {{ . }}
-          {{ end }}
-        </div>
-      </div>
-
-      <!-- Full-Width Section Below -->
-      <div class="under-profile">
-        {{ with index $splitContent 1 | markdownify }}
-        {{ . }}
-        {{ end }}
+    <div class="hx-w-full hx-break-words hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-pb-8 hx-pt-8 md:hx-pt-12">
+      <div class="content-padding content">
+        {{ .Content }}
       </div>
     </div>
   </div>
 
   <style>
-
-    .profile-section {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      text-align: center;
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-top: 1%;
-      margin-bottom: 1%;
-      padding: 1%;
-    }
-
-    .profile-picture {
-      width: 90%;
-      max-width: 475px;
-      min-width: 150px;
-      border-radius: 4px;
-    }
-
-    .profile-text {
-      flex: 1;
-      text-align: left;
-      margin: 1%;
-      display: block;
-    }
-
-    .under-profile {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-top: 1%;
-      margin-bottom: 1%;
-      padding: 1%
-    }
-
-    @media (max-width: 768px) {
-      .profile-section {
-        text-align: left;
-        flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 1%;
-        margin-bottom: 1%;
-      }
-
-      .profile-picture {
-        width: 100%;
-        max-width: 100%;
-        border-radius: 4px;
-        margin-top: 2%;
-        margin-bottom: 2%;
-      }
-
-      .profile-text {
-        width: 100%;
-        margin-top: 2%;
-      }
-
-      .under-profile {
-        text-align: left;
-        flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 1%;
-        margin-bottom: 2%;
-        padding-left: 2%
-      }
+    .content-padding {
+      padding-left: 7.5%;
+      padding-right: 7.5%;
     }
   </style>
 
 {{ end }}
+
 

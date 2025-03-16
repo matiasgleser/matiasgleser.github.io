@@ -1,0 +1,45 @@
+<!-- layouts/shortcodes/profile.html -->
+<div class="profile-container">
+  <div class="profile-image">
+    <img src="{{ .Get "image" }}" alt="Profile Picture" />
+  </div>
+  <div class="profile-text {{ if .Get "textClass" }}{{ .Get "textClass" }}{{ end }}">
+    {{ .Inner | markdownify }}
+  </div>
+</div>
+
+<style>
+  .profile-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 1em 0;
+  }
+
+  .profile-image {
+    margin-right: 7.5%;
+  }
+
+  .profile-image img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .profile-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  @media (max-width: 768px) {
+    .profile-container {
+      flex-direction: column;
+    }
+    .profile-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .profile-image img {
+      max-width: 100%;
+    }
+  }
+</style>
