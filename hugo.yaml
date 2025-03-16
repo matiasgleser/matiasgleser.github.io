@@ -24,26 +24,30 @@ menu:
     - name: Projects
       pageRef: /projects
       weight: 1
-    - name: Archive
-      pageRef: /archive
+    - name: Research
+      pageRef: /research
       weight: 2
-    - name: About Me
+    - name: Teaching
+      pageRef: /teaching
+      weight: 3   
+    - name: CV
       pageRef: /about
-      weight: 3
-    - name: Contact # ↗
-      url: "https://github.com/matiasgleser"
       weight: 4
-    - name: Search
+    - name: Contact # ↗
+      url: "mailto:mgleser@mail.utdt.edu"
+      # url: "https://github.com/matiasgleser"
       weight: 5
+    - name: Search
+      weight: 6
       params:
         type: search
     - name: GitHub
-      weight: 6
+      weight: 7
       url: "https://github.com/matiasgleser"
       params:
         icon: github
     - name: Twitter
-      weight: 7
+      weight: 8
       url: "https://twitter.com/MatiasGleser"
       params:
         icon: x-twitter
