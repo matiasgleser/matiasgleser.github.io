@@ -1,34 +1,43 @@
 ---
 title: Matias Gleser
+
 layout: homepage
-profilePicture: images/me.jpeg
+
 ---
 
+{{< profile image="images/me.jpeg" >}}
+
+# Matias Gleser
+
+I am an M.A. in Economics candidate at [Universidad Torcuato di Tella](https://www.utdt.edu/). I received my Bachelor in Economics from [Universidad Nacional de Córdoba](https://www.eco.unc.edu.ar/).
+
+**Research interests:** Macroeconomics, Macro-Finance
+
+I have working experience at a finance firm ([Grupo del Plata](https://www.gdelplata.com/)) as a research analyst and [teaching experience](/teaching) both at UNC and UTDT.
+
+
+<!-- {{< cards cols="5" >}} -->
+<!--   {{< card link="/" icon="github" >}} -->
+<!--   {{< card link="/" icon="inbox" >}} -->
+<!--   {{< card link="/" icon="x-twitter" >}} -->
+<!--   {{< card link="/" icon="linkedin" >}} -->
+<!--   {{< card link="/" icon="linkedin" >}} -->
+<!-- {{< /cards >}} -->
 
 
 
- Welcome! I’m Matías Gleser, currently pursuing a Master of Science in Economics at Universidad Torcuato di Tella (UTDT) in Buenos Aires, Argentina. Originally from Córdoba, I am passionate about macroeconomics and finance, with experience in financial portfolio modeling, database management, and strategy backtesting.
+<!-- <div class="social-icons"> -->
+<!--   <a href="https://github.com/your-username" target="_blank" class="social-link"> -->
+<!--     {{< icon "github" >}} -->
+<!--   </a> -->
+<!--   <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-link"> -->
+<!--     {{< icon "linkedin" >}} -->
+<!--   </a> -->
+<!-- </div> -->
 
-<br><br>
 
-# Education
+{{< /profile >}}
 
-<!-- <br> -->
 
-- **MA in Economics** (2024 – expected 2025)
-  *Universidad Torcuato di Tella (UTDT)*
 
-<!-- <br> -->
-
-<!--split-->
-
-- **BA in Economics** (2018 – 2023)
-  *Universidad Nacional de Córdoba (UNC)*
-  *Thesis: “Automated Market Makers and the Optimal Implementation for CBDCs”*
-  Awarded Outstanding, 2nd place at *Premio Raúl Prebisch*, Banco Central de la República Argentina.
-
-<br>
-<br>
-
-Read more [about me here]({{< relref "about" >}}).
 
