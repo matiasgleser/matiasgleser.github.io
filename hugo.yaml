@@ -31,12 +31,12 @@ menu:
       pageRef: /teaching
       weight: 3   
     - name: CV
-      pageRef: /about
+      pageRef: /cv
       weight: 4
-    - name: Contact # ↗
-      url: "mailto:mgleser@mail.utdt.edu"
+    # - name: Contact # ↗
+    #   url: "mailto:mgleser@mail.utdt.edu"
       # url: "https://github.com/matiasgleser"
-      weight: 5
+      # weight: 5
     - name: Search
       weight: 6
       params:
@@ -51,6 +51,18 @@ menu:
       url: "https://twitter.com/MatiasGleser"
       params:
         icon: x-twitter
+    - name: LinkedIn
+      weight: 9
+      url: "https://twitter.com/MatiasGleser"
+      params:
+        icon: linkedin
+    - name: Email
+      weight: 10
+      url: "mailto:mgleser@mail.utdt.edu"
+      params:
+        icon: inbox
+
+
 
 params:
   navbar:
