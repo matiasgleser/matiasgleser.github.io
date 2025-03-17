@@ -9,5 +9,23 @@ cascade:
 
 ---
 
-## To be made soon
+## Undergraduate
 
+<!-- ## Current courses -->
+
+* **Economics I (TA), Universidad Torcuato Di Tella** <br>
+    First semester (2024, 2025)
+
+<!-- ## Past courses -->
+
+* **Statistics III (TA), Universidad Nacional de Córdoba** <br>
+    First semester (2021, 2022)
+
+* **Microeconomics III (TA), Universidad Nacional de Córdoba** <br>
+    First semester (2021, 2022, 2023)
+
+* **Monetary Economics (TA), Universidad Nacional de Córdoba** <br>
+    First semester (2022, 2023)
+
+* **Macroeconomics I (TA), Universidad Nacional de Córdoba** <br>
+    First semester (2022, 2023)
