@@ -6,7 +6,7 @@ layout: wide
 ---
 
 
-You can get my full [CV](/cv/cv.pdf) here.
+You can get my full [CV]({{ "/cv/cv.pdf" | absURL }}) here.
 
 <!-- # Matías Gleser -->
 
