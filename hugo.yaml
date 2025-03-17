@@ -1,5 +1,7 @@
 # Hugo configuration file
 title: Matias Gleser
+baseURL: "https://matiasgleser.github.io/"
+
 
 # import hextra as module
 module:
@@ -77,3 +79,5 @@ params:
   theme:
     default: light
     displayToggle: true
+
+
