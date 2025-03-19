@@ -11,7 +11,7 @@ cascade:
 
 ## Publications
 
-* **[Automated Market Makers and the optimal implementation for CBDCs](https://www.bcra.gob.ar/Institucional/Resumen.asp?id=1640)**
+* **[Automated Market Makers and the optimal implementation for CBDCs](https://www.bcra.gob.ar/Institucional/Resumen.asp?id=1640)** (*in spanish*)
     
     **Banco Central de la República Argentina** (*Awarded second spot at the 2023 Raúl Prébisch Prize*)
 
