@@ -320,6 +320,7 @@ I have working experience at a finance firm (Grupo del Plata) as a research anal
     max-width: 500px;
     height: auto;
     border-radius: 4px;
+    object-fit: cover;  
   }
 
   .profile-text {
@@ -327,6 +328,7 @@ I have working experience at a finance firm (Grupo del Plata) as a research anal
     min-width: 0;
   }
 
+   
   @media (max-width: 768px) {
     .profile-container {
       flex-direction: column;
@@ -337,9 +339,38 @@ I have working experience at a finance firm (Grupo del Plata) as a research anal
     }
     .profile-image img {
       max-width: 100%;
+        */
+    }
+  }
+
+   
+  @media (min-width: 769px) and (max-width: 1366px) and (orientation: portrait) {
+    .profile-container {
+      flex-direction: column;
+    }
+    .profile-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+      align: center;
+    }
+    .profile-image img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .profile-text {
+      width: 100%;
+    }
+  }
+
+   
+  @media (min-width: 769px) {
+    .profile-image img {
+      max-width: 500px;  
     }
   }
 </style>
+
+
 
 
       </div>

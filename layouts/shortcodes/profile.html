@@ -23,6 +23,7 @@
     max-width: 500px;
     height: auto;
     border-radius: 4px;
+    object-fit: cover; /* Ensures the image scales nicely */
   }
 
   .profile-text {
@@ -30,6 +31,7 @@
     min-width: 0;
   }
 
+  /* Default mobile layout (stacked) */
   @media (max-width: 768px) {
     .profile-container {
       flex-direction: column;
@@ -40,6 +42,35 @@
     }
     .profile-image img {
       max-width: 100%;
+      /* width: 100%; /* Ensures full width on smaller screens */ */
+    }
+  }
+
+  /* Tablet portrait mode or when height exceeds width */
+  @media (min-width: 769px) and (max-width: 1366px) and (orientation: portrait) {
+    .profile-container {
+      flex-direction: column;
+    }
+    .profile-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+      align: center;
+    }
+    .profile-image img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .profile-text {
+      width: 100%;
+    }
+  }
+
+  /* Ensure flexibility for wider screens */
+  @media (min-width: 769px) {
+    .profile-image img {
+      max-width: 500px; /* Keeps the original max-width for desktop */
     }
   }
 </style>
+
+
