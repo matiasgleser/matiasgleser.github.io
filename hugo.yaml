@@ -45,16 +45,16 @@ menu:
       url: "https://github.com/matiasgleser"
       params:
         icon: github
-    - name: Twitter
-      weight: 8
-      url: "https://twitter.com/MatiasGleser"
-      params:
-        icon: x-twitter
-    - name: LinkedIn
-      weight: 9
-      url: "https://twitter.com/MatiasGleser"
-      params:
-        icon: linkedin
+    # - name: Twitter
+    #   weight: 8
+    #   url: "https://twitter.com/MatiasGleser"
+    #   params:
+    #     icon: x-twitter
+    # - name: LinkedIn
+    #   weight: 9
+    #   url: "https://twitter.com/MatiasGleser"
+    #   params:
+    #     icon: linkedin
     - name: Email
       weight: 10
       url: "mailto:mgleser@mail.utdt.edu"
