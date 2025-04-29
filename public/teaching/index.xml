@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matias Gleser – Teaching</title>
-    <link>https://matiasgleser.github.io/teaching/</link>
+    <link>http://localhost:1313/teaching/</link>
     <description>Recent content in Teaching on Matias Gleser</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://matiasgleser.github.io/teaching/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/teaching/index.xml" rel="self" type="application/rss+xml" />
     
     
       

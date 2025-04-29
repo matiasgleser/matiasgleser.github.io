@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matias Gleser – BymaData API Wrapper</title>
-    <link>https://matiasgleser.github.io/projects/bymadata-api-wrapper/</link>
+    <link>http://localhost:1313/projects/bymadata-api-wrapper/</link>
     <description>Recent content in BymaData API Wrapper on Matias Gleser</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://matiasgleser.github.io/projects/bymadata-api-wrapper/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/projects/bymadata-api-wrapper/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>Usage</title>
-      <link>https://matiasgleser.github.io/projects/bymadata-api-wrapper/usage/</link>
+      <link>http://localhost:1313/projects/bymadata-api-wrapper/usage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matiasgleser.github.io/projects/bymadata-api-wrapper/usage/</guid>
+      <guid>http://localhost:1313/projects/bymadata-api-wrapper/usage/</guid>
       <description>
         
         
@@ -193,10 +193,10 @@
     
     <item>
       <title>Summary</title>
-      <link>https://matiasgleser.github.io/projects/bymadata-api-wrapper/summary/</link>
+      <link>http://localhost:1313/projects/bymadata-api-wrapper/summary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matiasgleser.github.io/projects/bymadata-api-wrapper/summary/</guid>
+      <guid>http://localhost:1313/projects/bymadata-api-wrapper/summary/</guid>
       <description>
         
         
@@ -268,10 +268,10 @@
     
     <item>
       <title>Contribute</title>
-      <link>https://matiasgleser.github.io/projects/bymadata-api-wrapper/contributing/</link>
+      <link>http://localhost:1313/projects/bymadata-api-wrapper/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://matiasgleser.github.io/projects/bymadata-api-wrapper/contributing/</guid>
+      <guid>http://localhost:1313/projects/bymadata-api-wrapper/contributing/</guid>
       <description>
         
         

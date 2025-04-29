@@ -32,10 +32,6 @@ menu:
     - name: CV
       pageRef: /cv
       weight: 4
-    # - name: Contact # ↗
-    #   url: "mailto:mgleser@mail.utdt.edu"
-      # url: "https://github.com/matiasgleser"
-      # weight: 5
     - name: Search
       weight: 6
       params:
