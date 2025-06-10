@@ -26,14 +26,6 @@ I have working experience in finance at [Grupo del Plata](https://www.gdelplata.
 
 
 
-<!-- <div class="social-icons"> -->
-<!--   <a href="https://github.com/your-username" target="_blank" class="social-link"> -->
-<!--     {{< icon "github" >}} -->
-<!--   </a> -->
-<!--   <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-link"> -->
-<!--     {{< icon "linkedin" >}} -->
-<!--   </a> -->
-<!-- </div> -->
 
 
 {{< /profile >}}
