@@ -11,9 +11,9 @@ layout: homepage
 
 I am an M.A. in Economics candidate at [Universidad Torcuato di Tella](https://www.utdt.edu/). I received my Bachelor in Economics from [Universidad Nacional de Córdoba](https://www.eco.unc.edu.ar/).
 
-**Research interests:** Macroeconomics, Macro-Finance
+**Research interests:** macroeconomics, international macroeconomics, macro-finance
 
-I have working experience at a finance firm ([Grupo del Plata](https://www.gdelplata.com/)) as a research analyst and [teaching experience](/teaching) both at UNC and UTDT.
+I have working experience in finance at [Grupo del Plata](https://www.gdelplata.com/) as a research analyst and [teaching experience](/teaching) both at UNC and UTDT.
 
 
 <!-- {{< cards cols="5" >}} -->
